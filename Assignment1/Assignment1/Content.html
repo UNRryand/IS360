@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <title>Content</title>
+</head>
+<body>
+    <hr />
+    <nav>
+        <a href="./Index.html">Home</a>
+        <a href="./copyright.html">Copyright</a>
+    </nav>
+    <article>
+        <h1>The Cost of Avast's Free Antivirus: Companies Can Spy on Your Clicks</h1>
+    </article>
+    
+    <ul>
+        <li><a href="#sectionOne">De-Identification</a></li>
+        <li><a href="#sectionTwo">All Clicks Feed</a></li>
+        <li><a href="#sectionThree">Impossible to de-identify data</a></li>
+    </ul>
+
+    <figure>
+        <img src="https://i.pcmag.com/imagery/articles/05JmYayp6YeJSWOHHdM1xmb-7.fit_scale.size_1028x578.jpg" alt="Man with key and man with money" />
+        <figcaption>A hand holding a key identifying information and another hand with money wanting to pay for the information.</figcaption>
+    </figure>
+    <section>
+        <h2 id="sectionOne">How 'De-Identification' Can Fail</h2>
+        The Avast division charged with selling the data is Jumpshot, a company subsidiary that's been offering access to user traffic from 100 million devices,
+        including PCs and phones. In return, clients—from big brands to e-commerce providers—can learn what consumers are buying and where, whether it be from a Google or Amazon search, an ad from a news article, or a post on Instagram.
+        The data collected is so granular that clients can view the individual clicks users are making on their browsing sessions, including the time down to the millisecond. And while the collected data is never linked to a person's name, email or IP address,
+        each user history is nevertheless assigned to an identifier called the device ID, which will persist unless the user uninstalls the Avast antivirus product.
+    </section>
+
+    <section>
+        <h2 id="sectionTwo">The 'All Clicks Feed'</h2>
+        <p>
+            According to internal documents, Jumpshot offers a variety of products that serve up collected browser data in different ways. For example, one product focuses on searches that people are making, including keywords used and results that were clicked.
+            We viewed a snapshot of the collected data, and saw logs featuring queries on mundane, everyday topics. But there were also sensitive searches for porn—including underage sex—information no one would want tied to them.
+        </p>
+        <p>
+            But in regards to one particular client, Jumpshot appears to have offered access to everything. In December 2018, Omnicom Media Group, a major marketing provider, signed a contract to receive what's called the "All Clicks Feed," or every click Jumpshot is collecting from Avast users. Normally, the All Clicks Feed is sold without device IDs "to protect against triangulation of PII (Personally Identifiable Information)," says Jumpshot's product handbook.
+            But when it comes to Omnicom, Jumpshot is delivering the product with device IDs attached to each click, according to the contract.
+        </p>
+    </section>
+
+    <figure>
+        <img src="https://i.pcmag.com/imagery/articles/05JmYayp6YeJSWOHHdM1xmb-4.fit_lim.size_1004x625.v_1580133808.png" alt="privacy information" />
+        <figcaption>avast personal privacy page.</figcaption>
+    </figure>
+
+    <section>
+        <h2 id="sectionThree">'It's Almost Impossible to De-Identify Data'</h2>
+        <p>
+            Wladimir Palant is the security researcher who initially sparked last month's public scrutiny of Avast's data-collection policies. In October, he noticed something odd with the antivirus company's browser extensions: They were logging every website visited alongside a user ID and sending the information to Avast.
+            The findings prompted him to call out the extensions as spyware. In response, Google and Mozilla temporarily removed them until Avast implemented new privacy protections. Still, Palant has been trying to understand what Avast means when it says it "de-identifies" and "aggregates" users' browser histories when the antivirus company has refrained from publicly revealing the exact technical process.
+        </p>
+        <p>
+            Aggregation would normally mean that data of multiple users is combined. If Jumpshot clients can still see data of individual users, that's really bad," Palant said in an email interview.
+            One safeguard Jumpshot uses to prevent clients from pinpointing the real identities of Avast users is a patented process designed to strip away PII information, such as names and email addresses, from appearing in the collected URLs. But even with the PII stripping, Palant says the data collection is still needlessly exposing Avast users to privacy risks.
+            "It is hard to imagine that any anonymization algorithm will be able to remove all the relevant data. There are simply too many websites out there, and each of them does something different," he said. For example, Palant points out how visiting the collected URL links for one user could consistently reveal which tweets or videos the person commented on, and thus expose the user's real identity.
+            "It's almost impossible to de-identify data," said Eric Goldman, co-director of the High Tech Law Institute at Santa Clara University, who also took issue with an antivirus company monetizing users' data. "That just sounds like a terrible business practice. They're supposed to be protecting consumers from threats, rather than exposing them to threats."
+        </p>
+    </section>
+    <hr />
+</body>
+</html>
