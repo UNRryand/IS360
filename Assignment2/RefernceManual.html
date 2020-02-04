@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,33 +9,47 @@
 <body>
     <hr>
     <nav>
-        <table style="border: solid; border: width 1px; border-collapse:collapse;">
+        <table style="border: solid; border-width: thin; border-collapse:collapse;">
             <tr>
-                <th style="border: solid; border: width 1px; border-collapse:collapse;">Home</th>
-                <th style="border: solid; border: width 1px; border-collapse:collapse;">Reference Manual</th>
-                <th style="border: solid; border: width 1px; border-collapse:collapse;">Table1</th>
-                <th style="border: solid; border: width 1px; border-collapse:collapse;">Table2</th>
+                <th style="border: solid; border-width:thin; border-collapse:collapse;">Home</th>
+                <th style="border: solid; border-width:thin; border-collapse:collapse;">Reference Manual</th>
+                <th style="border: solid; border-width:thin; border-collapse:collapse;">Table1</th>
+                <th style="border: solid; border-width:thin; border-collapse:collapse;">Table2</th>
             </tr>
         </table>
     </nav>
     <hr>
 
     <article>
-        <h1>All about the &lt;a&gt; tag.</h1>
+        <h1>All about the <strong><code>&lt;a&gt;</code></strong> tag.</h1>
         <section>
             <h2>Abstract</h2>
-            <p>Paragraph about the anchor tag.</p>
+            <p>the <code>&lt;a&gt;</code> tag expresses a hyperlink, which is used to link one page to another page. You can link the pages with 
+            absolute referencing, or relative referencing. Absolute referencing uses a location on the web to point the anchor tag towards.<br />
+            A relative reference points to a local reference of the link on the web server.To use the anchor tag properly, you will need a few attributes.</p>
         </section>
         <section>
             <h2>Details</h2>
+            <p>Here are the attributes you will need to properly use the anchor tag.There are more attributes that are beyond the scope, but the main one you need is:</p>
             <ul>
-                <li>List items about the important attributes.</li>
+                <li>href</li>
             </ul>
         </section>
         <section>
             <h2>Examples</h2>
-            <p>examples using absolute and relative references.</p>
+            <p>
+                To use the anchor tag properly for a relative reference, use this as a guide for linking between pages: <br />
+                <em><code style="background-color:grey; color:white;"> &lt;a href="https://www.unr.edu/"&gt;&lt;/a&gt;</code><br /></em>
+                This is a link to the unr website. You need to have the URL in the href attribute and some text to describe the link in the alt category.
+                Using a relative link is similar, just point to a page that is in your directory. <br />
+                <em><code style="background-color:grey; color:white;"> &lt;a href="./index.html"&gt;&lt;/a&gt;</code><br /></em>
+                You can also <a href="./index.html">wrap</a> text or a picture in the anchor tag. <br />
+                <em><code style="background-color:grey; color:white;"> &lt;a href="./index.html"&gt;wrap&lt;/a&gt;</code><br /></em>
+                <em><code style="background-color:grey; color:white;"> &lt;a href="https://www.unr.edu/Images/president/im/basic-logos/downloads/nevada-blockn-blue.png"&gt;&lt;img src="https://www.website.com/png" alt="text about the picture." /&gt;&lt;/a&gt;</code><br /></em>
+                <a href="https://www.unr.edu"><img src="https://www.unr.edu/Images/president/im/basic-logos/downloads/nevada-blockn-blue.png" alt="UNR" style="height: 100px; width: 100px;" /></a>
+            </p>
         </section>
     </article>
+
 </body>
 </html>
