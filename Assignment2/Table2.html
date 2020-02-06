@@ -3,25 +3,40 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Table2</title>
+    <title>Table 2</title>
 </head>
 <body>
-    <table style="background-color:lightgray;">
+
+    <hr>
+    <nav>
+        <table style="border: solid; border-width: thin; border-collapse:collapse;">
+            <tr>
+                <th style="border: solid; border-width:thin; border-collapse:collapse;"><a href="./Index.html">Home</a></th>
+                <th style="border: solid; border-width:thin; border-collapse:collapse;"><a href="./RefernceManual.html">Reference Manual</a></th>
+                <th style="border: solid; border-width:thin; border-collapse:collapse;"><a href="./Table1.html">Table1</a></th>
+                <th style="border: solid; border-width:thin; border-collapse:collapse;"><a href="./Table2.html">Table2</a></th>
+            </tr>
+        </table>
+    </nav>
+    <hr>
+
+    <table style="background-color:lightgray; border-radius:10px; border-color: gray; border: 1px solid gray; background-image: linear-gradient(rgba(219, 218, 218,1),rgba(255,255,255,1),rgba(255,255,255,1));">
         <tr>
             <th style="text-align:left;" colspan="3">Current conditions at</th>
         </tr>
         <tr>
-            <td>UNR campus</td>
+            <td style="color:darkblue; font-size:30px;">UNR campus (UNRC)</td>
         </tr>
         <tr>
-            <td style="font-size:12px;"><strong>Lat:</strong> 39.53917&deg;N 
-            <strong>Lon:</strong> 119.80583&deg;W 
-            <strong>Elev:</strong> 4480ft.
+            <td style="font-size:12px;">
+                <strong>Lat:</strong> 39.53917&deg;N
+                <strong>Lon:</strong> 119.80583&deg;W
+                <strong>Elev:</strong> 4480ft.
             </td>
         </tr>
         <tr>
             <td>
-                <table style="background-color:whitesmoke; border-spacing:20px 10px;">
+                <table style="background-color:whitesmoke; border-spacing:20px 10px; border-radius:10px; box-shadow: 2px 2px 8px 0px #888888;"">
                     <tr>
                         <td>NA</td>
                         <td><strong>Humidity</strong> 52%</td>
@@ -56,6 +71,68 @@
             </td>
         </tr>
     </table>
-
+    <!--Second Table-->
+    <br />
+    <table style="background-color:lightgray; border-radius:10px; border-color: gray; border: 1px solid gray;  background-image: linear-gradient(rgba(219, 218, 218,1),rgba(255,255,255,1),rgba(255,255,255,1));">
+        <tr>
+            <th colspan="9" style="text-align: left;">Extended Forecast For</th>
+        </tr>
+        <tr>
+            <td style="font-size:30px; color:darkblue;">Reno NV</td>
+        </tr>
+        <!--nested table-->
+        <tr>
+            <td>
+                <table style="background-color:whitesmoke; border-spacing:20px 10px; border-radius:10px; box-shadow: 2px 2px 8px 0px #888888;">
+                    <tr>
+                        <td style="text-align:center;">Today</td>
+                        <td style="text-align:center;">Tonight</td>
+                        <td style="text-align:center;">Sunday</td>
+                        <td style="text-align:center;">Sunday Night</td>
+                        <td style="text-align:center;">Monday</td>
+                        <td style="text-align:center;">Monday Night</td>
+                        <td style="text-align:center;">Tuesday</td>
+                        <td style="text-align:center;">Tuesday Night</td>
+                        <td style="text-align:center;">Wednesday</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;"><img src="./sunny.png" alt="Sunny weather" style="width:100px; height:100px; border-radius:5px;" /></td>
+                        <td style="text-align:center;"><img src="./night.png" alt="clear weather" style="width:100px; height:100px; border-radius:5px;"  /></td>
+                        <td style="text-align:center;"><img src="./sunny.png" alt="Sunny weather" style="width:100px; height:100px; border-radius:5px;"  /></td>
+                        <td style="text-align:center;"><img src="./night.png" alt="clear weather" style="width:100px; height:100px; border-radius:5px;"  /></td>
+                        <td style="text-align:center;"><img src="./sunny.png" alt="Sunny weather" style="width:100px; height:100px; border-radius:5px;"  /></td>
+                        <td style="text-align:center;"><img src="./night.png" alt="clear weather" style="width:100px; height:100px; border-radius:5px;"  /></td>
+                        <td style="text-align:center;"><img src="./sunny.png" alt="Sunny weather" style="width:100px; height:100px; border-radius:5px;"  /></td>
+                        <td style="text-align:center;"><img src="./night.png" alt="clear weather" style="width:100px; height:100px; border-radius:5px;"  /></td>
+                        <td style="text-align:center;"><img src="./sunny.png" alt="Sunny weather" style="width:100px; height:100px; border-radius:5px;"  /></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">Sunny</td>
+                        <td style="text-align:center;">Clear</td>
+                        <td style="text-align:center;">Sunny</td>
+                        <td style="text-align:center;">Clear</td>
+                        <td style="text-align:center;">Sunny</td>
+                        <td style="text-align:center;">Clear</td>
+                        <td style="text-align:center;">Sunny</td>
+                        <td style="text-align:center;">Clear</td>
+                        <td style="text-align:center;">Sunny</td>
+                    </tr>
+                    <tr>
+                        <td style="color:red; text-align:center; padding-top:25px;">High: 74&deg;F</td>
+                        <td style="color:blue; text-align:center; padding-top:25px;">Low: 46&deg;F</td>
+                        <td style="color:red; text-align:center; padding-top:25px;">High: 77&deg;F</td>
+                        <td style="color:blue; text-align:center; padding-top:25px;">Low: 50&deg;F</td>
+                        <td style="color:red; text-align:center; padding-top:25px;">High: 85&deg;F</td>
+                        <td style="color:blue; text-align:center; padding-top:25px;">Low: 54&deg;F</td>
+                        <td style="color:red; text-align:center; padding-top:25px;">High: 87&deg;F</td>
+                        <td style="color:blue; text-align:center; padding-top:25px;">Low: 45&deg;F</td>
+                        <td style="color:red; text-align:center; padding-top:25px;">High: 83&deg;F</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <footer>&copy;Ryan Deleurme</footer>
 </body>
 </html>
