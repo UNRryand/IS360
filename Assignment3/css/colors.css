@@ -1,14 +1,18 @@
 a:hover { 
     background-color: rgb(97, 97, 97)
 }
+a.active { 
+    background-color: red;
+}
 a {
     color: rgb(236, 236, 236);
 }
 .nav-bar-outer { 
     background-color: grey;
 }
-.footer { 
-    background-color: rgb(14, 14, 14);
-    color: grey;
-    
+.footer-outer { 
+    border-left-color: rgb(151, 151, 151);
+}
+footer { 
+    background-color: rgb(51, 51, 51);
 }
