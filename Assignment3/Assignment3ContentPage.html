@@ -6,7 +6,6 @@
     <title>Content</title>
     <link rel="stylesheet" href="./css/colors.css">
     <link rel="stylesheet" href="./css/global.css">
-    <script src="./sticky.js"></script>
 </head>
 
 <body>
@@ -16,7 +15,8 @@
             <nav>
                 <ul class="nav-list-parent">
                     <li class="nav-list-child"><a class="nav-active" href="./index.html" id="Home">Home</a></li>
-                    <li class="nav-list-child"><a class="nav-active" href="#Content" class="Content">Content</a></li>
+                    <li class="nav-list-child"><a class="nav-active" href="./Assignment3ContentPage.html">Content</a></li>
+                    <li class="nav-list-child"><a class="nav-active" href="./Table.html">Table</a></li>
                 </ul>
             </nav>
         </div>
@@ -24,7 +24,7 @@
         <br>
         <br>
         <div class="main-header">
-        <h1 id="title">CSS Snapshot 2018</h1>
+        <h1 id="title" class="content-h">CSS Snapshot 2018</h1>
         <h2>
             <span>
                 W3C Working Group Note,
@@ -42,7 +42,7 @@
     </div>
 <div class="main-content">
     <content>
-        <h2 id="#whatis">What is CSS?</h2>
+        <h2 id="#whatis" class="content-h">What is CSS?</h2>
         <p>CSS is the language for describing the presentation of Web pages, including colors, 
         layout, and fonts. It allows one to adapt the presentation to different types of 
         devices, such as large screens, small screens, or printers. CSS is independent of 
@@ -51,7 +51,7 @@
         tailor pages to different environments. This is referred to as the separation 
         of structure (or: content) from presentation.</p>
         
-        <h2 id="#abstract">Abstract</h2>
+        <h2 id="#abstract" class="content-h">Abstract</h2>
         <p>
             This document collects together into one definition all the specs that together form the
             current state of Cascading Style Sheets (CSS) as of 2018. The primary audience is CSS
@@ -63,7 +63,7 @@
             HTML and XML) on screen, on paper, etc.
         </p>
 
-        <h2 id="status">Status of this document</h2>
+        <h2 id="status" class="content-h">Status of this document</h2>
 
         <p>
             <em>
@@ -84,7 +84,7 @@
             <a href="http://www.w3.org/Style/CSS/members">CSS Working Group</a>.
         </p>
 
-        <h2>Introduction</h2>
+        <h2 class="content-h">Introduction</h2>
 
         <p>
             When the first CSS specification was published,
@@ -156,13 +156,15 @@
                 </p>
             <dt>Candidate Recommendation (CR)
             <dd>
-                This is the testing phase of a W3C spec.
-                Notably, this phase is about using tests and implementations to test the
-                specification: it is not about testing the implementations.
-                This process often reveals more problems with the spec,
-                and so a Candidate Recommendation will morph over time in response to
-                implementation and testing feedback, though usually less so than during the
-                design phase (WD).
+                <p>
+                    This is the testing phase of a W3C spec.
+                    Notably, this phase is about using tests and implementations to test the
+                    specification: it is not about testing the implementations.
+                    This process often reveals more problems with the spec,
+                    and so a Candidate Recommendation will morph over time in response to
+                    implementation and testing feedback, though usually less so than during the
+                    design phase (WD).
+                </p>
                 <p>
                     Demonstration of two correct, independent implementations of each feature
                     is required to exit CR, so in this phase the WG builds a test suite and
@@ -175,13 +177,15 @@
                 </p>
             <dt>Recommendation (REC)
             <dd>
-                This is the completed state of a W3C spec and represents a maintenance phase.
-                At this point the WG only maintains an errata document
-                and occasionally publishes an updated edition that incorporates the errata back
-                into the spec.
+                <p>
+                    This is the completed state of a W3C spec and represents a maintenance phase.
+                    At this point the WG only maintains an errata document
+                    and occasionally publishes an updated edition that incorporates the errata back
+                    into the spec.
+                </p>
         </dl>
 
-        <h2 id="csslevels">CSS Levels</h2>
+        <h2 id="csslevels" class="content-h">CSS Levels</h2>
 
         <p>
             Cascading Style Sheets does not have versions in the traditional sense;
@@ -196,26 +200,30 @@
         <dl>
             <dt><dfn>CSS Level 1</dfn>
             <dd>
-                The CSS Working Group considers the <a href="https://www.w3.org/TR/2008/REC-CSS1-20080411/">CSS1 specification</a> to be
-                obsolete. <a>CSS Level 1</a> is defined as all the features defined
-                in the CSS1 specification (properties, values, at-rules, etc), but using
-                the syntax and definitions in the <a href="https://www.w3.org/TR/CSS2/">CSS2.1 specification</a>.
-                <a href="https://www.w3.org/TR/css-style-attr/">CSS Style Attributes</a> defines its inclusion in
-                element-specific style attributes.
+                <p>
+                    The CSS Working Group considers the <a href="https://www.w3.org/TR/2008/REC-CSS1-20080411/">CSS1 specification</a> to be
+                    obsolete. <a>CSS Level 1</a> is defined as all the features defined
+                    in the CSS1 specification (properties, values, at-rules, etc), but using
+                    the syntax and definitions in the <a href="https://www.w3.org/TR/CSS2/">CSS2.1 specification</a>.
+                    <a href="https://www.w3.org/TR/css-style-attr/">CSS Style Attributes</a> defines its inclusion in
+                    element-specific style attributes.
+                </p>
             <dt><dfn>CSS Level 2</dfn>
             <dd>
-                Although the <a href="https://www.w3.org/TR/2008/REC-CSS2-20080411/">CSS2 specification</a> is
-                technically a W3C Recommendation, it passed into the Recommendation stage
-                before the W3C had defined the Candidate Recommendation stage. Over time
-                implementation experience and further review has brought to light many problems
-                in the CSS2 specification, so instead of expanding an already
-                <a href="https://www.w3.org/Style/css2-updates/REC-CSS2-19980512-errata.html">
-                    unwieldy
-                    errata list
-                </a>, the CSS Working Group chose to define <cite>
-                    CSS Level 2 Revision 1
-                </cite> (CSS2.1). In case of any conflict between the two specs
-                CSS2.1 contains the definitive definition.
+                <p>
+                    Although the <a href="https://www.w3.org/TR/2008/REC-CSS2-20080411/">CSS2 specification</a> is
+                    technically a W3C Recommendation, it passed into the Recommendation stage
+                    before the W3C had defined the Candidate Recommendation stage. Over time
+                    implementation experience and further review has brought to light many problems
+                    in the CSS2 specification, so instead of expanding an already
+                    <a href="https://www.w3.org/Style/css2-updates/REC-CSS2-19980512-errata.html">
+                        unwieldy
+                        errata list
+                    </a>, the CSS Working Group chose to define <cite>
+                        CSS Level 2 Revision 1
+                    </cite> (CSS2.1). In case of any conflict between the two specs
+                    CSS2.1 contains the definitive definition.
+                </p>
                 <p>
                     Once CSS2.1 became Candidate Recommendation—effectively though not
                     officially the same level of stability as CSS2—obsoleted the CSS2
@@ -235,13 +243,15 @@
                 </p>
             <dt><dfn>CSS Level 3</dfn>
             <dd>
-                <a>CSS Level 3</a> builds on CSS Level 2 module by module, using the CSS2.1
-                specification as its core. Each module adds functionality and/or
-                replaces part of the CSS2.1 specification. The CSS Working Group
-                intends that the new CSS modules will not contradict the CSS2.1
-                specification: only that they will add functionality and refine
-                definitions. As each module is completed, it will be plugged in to
-                the existing system of CSS2.1 plus previously-completed modules.
+                <p>
+                    <a>CSS Level 3</a> builds on CSS Level 2 module by module, using the CSS2.1
+                    specification as its core. Each module adds functionality and/or
+                    replaces part of the CSS2.1 specification. The CSS Working Group
+                    intends that the new CSS modules will not contradict the CSS2.1
+                    specification: only that they will add functionality and refine
+                    definitions. As each module is completed, it will be plugged in to
+                    the existing system of CSS2.1 plus previously-completed modules.
+                </p>
                 <p>
                     From this level on modules are levelled independently: for example
                     Selectors Level 4 may well be completed before CSS Line Module Level 3.
@@ -250,15 +260,17 @@
                 </p>
             <dt><dfn>CSS Level 4</dfn> and beyond
             <dd>
-                There is no CSS Level 4.
-                Independent modules can reach level 4 or beyond,
-                but CSS the language no longer has levels.
-                ("CSS Level 3" as a term is used only to differentiate it from the previous monolithic versions.)
+                <p>
+                    There is no CSS Level 4.
+                    Independent modules can reach level 4 or beyond,
+                    but CSS the language no longer has levels.
+                    ("CSS Level 3" as a term is used only to differentiate it from the previous monolithic versions.)
+                </p>
         </dl>
 
-        <h2 id="styles">Styles</h2>
+        <h2 id="styles" class="content-h">Styles</h2>
 
-        <h3><code>border</code> Style</h3>
+        <h3 class="content-h"><code>border</code> Style</h3>
 
         <p>
             <span>The <strong><code>border</code></strong> property sets an element's border.</span> It sets the
@@ -274,9 +286,10 @@
             </a>.
         </p>
 
-        <h4>Syntax</h4>
-
-        <pre>/* style */
+        <h4 class="content-h">Syntax</h4>
+        <div class="pre">
+            <div class="pre-inner">
+                <pre >/* style */
 border: solid;
 
 /* width | style */
@@ -293,7 +306,8 @@ border: inherit;
 border: initial;
 border: unset;
 </pre>
-
+            </div>
+        </div>
 
         <p>
             The <code>border</code> property may be specified using one, two, or three of the values
@@ -308,20 +322,24 @@ border: unset;
         </div>
 
 
-        <h3 id="Values" name="Values">Values</h3>
+        <h3 id="Values" name="Values" class="content-h">Values</h3>
 
         <dl>
             <dt id="&lt;line-width>"><code>&lt;line-width&gt;</code></dt>
             <dd>
-                Sets the thickness of the border. Defaults to <code>medium</code> if absent.
-                See <a href="/en-US/docs/Web/CSS/border-width"
-                       title="The border-width shorthand CSS property sets the width of an element's border."><code>border-width</code></a>.
+                <p>
+                    Sets the thickness of the border. Defaults to <code>medium</code> if absent.
+                    See <a href="/en-US/docs/Web/CSS/border-width"
+                           title="The border-width shorthand CSS property sets the width of an element's border."><code>border-width</code></a>.
+                </p>
             </dd>
             <dt id="&lt;line-style>"><code>&lt;line-style&gt;</code></dt>
             <dd>
-                Sets the style of the border. Defaults to <code>none</code> if absent.
-                See <a href="/en-US/docs/Web/CSS/border-style"
-                       title="The border-style shorthand CSS property sets the line style for all four sides of an element's border."><code>border-style</code></a>.
+                <p>
+                    Sets the style of the border. Defaults to <code>none</code> if absent.
+                    See <a href="/en-US/docs/Web/CSS/border-style"
+                           title="The border-style shorthand CSS property sets the line style for all four sides of an element's border."><code>border-style</code></a>.
+                </p>
             </dd>
             <dt id="&lt;color>">
                 <a href="/en-US/docs/Web/CSS/color_value"
@@ -329,20 +347,25 @@ border: unset;
                     alpha-channel transparency value, indicating how the color should composite with its background."><code>&lt;color&gt;</code></a>
             </dt>
             <dd>
-                Sets the color of the border. Defaults to <code>currentcolor</code> if absent.
-                See <a href="/en-US/docs/Web/CSS/border-color"
-                       title="The border-color shorthand CSS property sets the color of an
-                       element's border."><code>border-color</code></a>.
+                <p>
+                    Sets the color of the border. Defaults to <code>currentcolor</code> if absent.
+                    See <a href="/en-US/docs/Web/CSS/border-color"
+                    title="The border-color shorthand CSS property sets the color of an
+                    element's border."><code>border-color</code></a>.
+                </p>
             </dd>
         </dl>
     </content>
+</div>
+
     <footer>
         <div class="footer-outer">
-            <div class="footer-inner">
-            <p id="footer-p">&copy;Ryan Deleurme</p>
+            <div class="footer-left">
+                <p id="footer-p">&copy;Ryan Deleurme<img src="img/UNR-logo.gif" alt="UNR Logo" style="width: 50px; height: 50px;"></p>
             </div>
         </div>
     </footer>
+
 </body>
 </html>
 <!-- 330 -->

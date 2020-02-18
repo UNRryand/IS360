@@ -1,18 +1,46 @@
-a:hover { 
+a.nav-active:hover { 
     background-color: rgb(97, 97, 97)
 }
-a.active { 
+a.nav-active.active { 
     background-color: red;
 }
 a {
-    color: rgb(236, 236, 236);
+    color: #E5B60B;
+    text-decoration: none;
 }
 .nav-bar-outer { 
-    background-color: grey;
+    background-color: #FC7307;
 }
 .footer-outer { 
-    border-left-color: rgb(151, 151, 151);
+    border-left-color: #342E09;
 }
 footer { 
-    background-color: rgb(51, 51, 51);
+    background-color: #FC7307;
+}
+.footer-left p { 
+    color:#FDDC22 ;
+}
+body {
+    background-color: #F7E3D4;
+}
+.main-content { 
+    color: #3D3500;
+}
+header h1 h2 h3 { 
+    color: #BDA105;
+}
+.content-h { 
+    color: #7C6A03;
+}
+strong { 
+    color: #FF7105;
+}
+.pre-inner { 
+    background: #FFBD8A;
+    color: #696969;
+}
+.note { 
+    color: #F1CAAC;
+    background-color: #816551;
+    border-left: #342E09 solid 3px;
 }
