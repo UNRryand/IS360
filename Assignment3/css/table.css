@@ -1,0 +1,55 @@
+table {
+    border: solid;
+    border-collapse: collapse;
+    border-width: 1px;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-top: 1em;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+thead th,td {
+    border: solid;
+    border-width: 1px;
+    border-color: #FF7105;
+    padding: 10px;
+}
+th {
+    background-color: #342E09;
+    color: #FDDC22;
+}
+.table-wrap {
+    text-align: center;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100%;
+}
+h1 {
+    font-size: 300%;
+}
+h1::first-letter {
+    font-size: 325%;
+}
+tr:nth-child(even) {
+    background-color: #F1CAAC;
+    color: #342E09;
+}
+tr:hover {
+    background-color: #816551;
+    color: azure;
+}
+.bar {
+    margin-bottom: 5px;
+}
+.stackOrange {
+    background-color: #FF7105;
+}
+.gitGrey {
+    background-color: rgb(148, 148, 148);
+}
+.pyYellow {
+    background-color: #FDDC22;
+}

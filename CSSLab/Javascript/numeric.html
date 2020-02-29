@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script>
+        function btnCalculate_Click() {
+            var hourlyWageWidget;
+            var hourlyWageNumber;
+            var hoursWorkedWidget;
+            var hoursWorkedNumber;
+            var resultWidget;
+            var resultNumber;
+            var deduc;
+            var txtOutputWidget;
+            var errorFlag = false;
+
+            hourlyWageWidget = document.getElementById("txtHourlyWage");
+            hoursWorkedWidget = document.getElementById("txtHoursWorked");
+            resultWidget = document.getElementById("txtResult");
+            txtOutputWidget = document.getElementById("txtOutput");
+
+            hourlyWageNumber = parseFloat(hourlyWageWidget.value);
+            if (isNaN(hourlyWageNumber))
+            {
+                errorFlag = true;
+            }
+
+            hoursWorkedNumber = parseInt(hoursWorkedWidget.value);
+            if (isNaN(hoursWorkedNumber))
+            {
+                errorFlag = true;
+            }
+
+            if (errorFlag)
+            {
+                resultWidget.value = "Cannot calculate. Input not numeric."
+            }
+            else
+            {
+                resultNumber = hourlyWageNumber * hoursWorkedNumber;
+                deduc = resultNumber * .72;
+                resultWidget.value = resultNumber.toString();
+                txtOutputWidget.value = deduc.toString();
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <form id="numericForm">
+            <fieldset form="numericForm">
+                <legend>Enter Input:</legend>
+                <label for="txtHourlyWage">Hourly Wage:</label>
+                <input type="text" id="txtHourlyWage" />
+                <br />
+                <label for="txtHoursWorked">Hours Worked</label>
+                <input type="text" id="txtHoursWorked" />
+                <br />
+                <label for="txtResult">Result</label>
+                <input type="text" id="txtResult" />
+                <br />
+                <label for="txtOutput">Deduction</label>
+                <input type="text" id="txtOutput" />
+                \                <button id="btnCalculate" type="button"
+                onclick="btnCalculate_Click()">
+            Validate
+        </button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

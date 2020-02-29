@@ -17,13 +17,13 @@
 .nav-list-parent li { 
     display: inline-block;
     padding: 14px 16px;
+    background-color: #342E09;
+    border-radius: 5px;
+    padding: 14px 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .nav-list-parent a { 
     text-decoration: none;
-    padding: 14px 16px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #342E09;
-    border-radius: 5px;
 }
 html, body { 
     height: 100%;
@@ -37,8 +37,10 @@ html, body {
 .main-header { 
     margin: auto;
     width: 1024px;
+    padding: 4rem;
+    text-align: center;
 }
-#dot {
+.dot {
     text-align: center;
     font-size: 70px;
     margin: 0;
@@ -51,11 +53,11 @@ html, body {
     overflow: auto;
     padding-bottom: 100px;
     height: auto;
-    
+    width: 100%;
 }
 .footer-outer { 
     padding: 10px;
-    width: 100%;
+    border: #342E09 1px solid;
 }
 .footer-left { 
     padding: 10px;
@@ -63,6 +65,7 @@ html, body {
     overflow: auto;
 }
 .footer-left p { 
+    font-size: 10px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
 }
@@ -71,8 +74,7 @@ html, body {
 }
 footer { 
     position: relative;
-    height: 100px;
-    margin-top: -100px;
+    margin-top: 30px;
     clear: both;
 }
 #line { 
@@ -91,8 +93,38 @@ footer {
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
     margin-left: 30px;
     margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 dt { 
     font-size: 25px;
     font-weight: bold;
+}
+.content-h::first-letter { 
+    font-size: 200%;
+}
+ul.breadcrumb {
+    list-style: none;
+    padding: 10px 16px;
+    display: inline;
+    border-radius: 5px;
+}
+ul.breadcrumb li {
+    display: inline;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    content: "/\00a0";
+}
+.pag {
+    text-align: center;
+    list-style: none;
+    padding: 10px 16px;
+}
+.pag li {
+    display: inline;
+}
+.pag li+li:before {
+    padding: 8px;
+    content: "/\00a0";
 }

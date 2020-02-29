@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 1024px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+    <script>
+        function btnCalculate_Click()
+        {
+            var savingsAmountWidget;
+            var savingsAmountNumber;
+            var interestRateWidget;
+            var interestRateNumber;
+            var resultWidget;
+            var errorFlag = false;
+            var totalValue = 0;
+
+            var yearCount;
+
+            savingsAmountWidget = document.getElementById("txtSavingsAmount");
+            interestRateWidget = document.getElementById("txtInterestRate");
+            resultWidget = document.getElementById("txtResult");
+
+            savingsAmountNumber = parseFloat(savingsAmountWidget.value);
+            if (isNaN(savingsAmountNumber)) {
+                errorFlag = true;
+            }
+
+            interestRateNumber = parseFloat(interestRateWidget.value);
+            if (isNaN(interestRateNumber)) {
+                errorFlag = true;
+            }
+            else
+            {
+                interestRateNumber = interestRateNumber / 100;
+            }
+
+            if (errorFlag) {
+                resultWidget.value = "Cannot calculate. Input not numeric."
+            }
+            else
+            {
+                
+                for (yearCount = 1; yearCount < 30; yearCount++)
+                {
+                    resultWidget.value += yearCount.toString() + "\t";
+                    // Beginning balance
+                    // New balance.
+                    resultWidget.value += totalValue.toFixed(2).toString() + "\t";
+                    totalValue = (totalValue + savingsAmountNumber) *
+                        (1 + interestRateNumber);
+                    resultWidget.value += totalValue.toFixed(2).toString();
+                    resultWidget.value += "\n"
+                }
+            }
+        }
+    </script>
+</head>
+    <body>
+        <form id="savingsForm">
+            <fieldset form="savingsForm">
+                <legend>Enter Input:</legend>
+                <label for="txtSavingsAmount">Amount to save per period:</label>
+                <input type="text" id="txtSavingsAmount" />
+                <br />
+                <label for="txtInterestRate">Interest Rate (Enter 5% as 5 not 0.05) </label>
+                <input type="text" id="txtInterestRate" />
+                <br />
+                <label for="txtResult">Result</label>
+                <br />
+                <textarea id="txtResult"></textarea>
+                <br />
+                <button id="btnCalculate" type="button"
+                        onclick="btnCalculate_Click()">
+                    Calculate
+                </button>
+    
+            </fieldset>
+        </form>
+    </body>
+</html>

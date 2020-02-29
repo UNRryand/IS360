@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hover {
+            
+        }
+    </style>
+    <script>
+        function btnValidate_Click()
+        {
+            var tName;
+            var tErr;
+            tName = document.getElementById("txtName");
+            tErr = document.getElementById("spnMessages")
+            if (tName.value == "")
+            {
+                tErr.innerHTML = "Name must exist.";
+            }
+            else
+            {
+                tErr.innerHTML = "Name valid.";
+            }
+        }
+        function btnCalculate_Click() {
+            var hourlyWageWidget;
+            var hourlyWageNumber;
+            var hoursWorkedWidget;
+            var hoursWorkedNumber;
+            var resultWidget;
+            var resultNumber;
+            var errorFlag = false;
+
+            hourlyWageWidget = document.getElementById("txtHourlyWage");
+            hoursWorkedWidget = document.getElementById("txtHoursWorked");
+            resultWidget = document.getElementById("txtResult");
+
+            hourlyWageNumber = parseFloat(hourlyWageWidget.value);
+            if (isNaN(hourlyWageNumber))
+            {
+                errorFlag = true;
+            }
+
+            hoursWorkedNumber = parseInt(hoursWorkedWidget.value);
+            if (isNaN(hoursWorkedNumber))
+            {
+                errorFlag = true;
+            }
+
+            if (errorFlag)
+            {
+                resultWidget.value = "Cannot calculate. Input not numeric."
+            }
+            else
+            {
+                resultNumber = hourlyWageNumber * hoursWorkedNumber;
+                resultWidget.value = resultNumber.toString();
+            }
+
+        }
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <form id="firstForm">
+                    <fieldset form="firstForm">
+                        <legend>Validate Input</legend>
+                        Enter Name: <input type="text" id="txtName" />
+                        <br />
+                        <button id="btnValidate" type="button" 
+                        onclick="btnValidate_Click()" class="btn btn-primary">Validate</button>
+                        <br />
+                        Messages: <span id="spnMessages"></span>
+                    </fieldset>
+                </form>
+                <form id="numericForm">
+                    <fieldset form="numericForm">
+                        <legend>Enter Input:</legend>
+                        <label for="txtHourlyWage">Hourly Wage:</label>
+                        <input type="text" id="txtHourlyWage" />
+                        <br />
+                        <label for="txtHoursWorked">Hours Worked</label>
+                        <input type="text" id="txtHoursWorked" />
+                        <br />
+                        <label for="txtResult">Result</label>
+                        <input type="text" id="txtResult" />
+                        <br />
+                        <button id="btnCalculate" type="button"
+                                onclick="btnCalculate_Click()">
+                            Validate
+                        </button>
+            
+                    </fieldset>
+                </form>
+            
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

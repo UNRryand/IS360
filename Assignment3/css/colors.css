@@ -1,11 +1,12 @@
 a.nav-active:hover { 
-    background-color: rgb(97, 97, 97)
+    text-decoration: underline;
+    color: #FDDC22;
 }
-a.nav-active.active { 
-    background-color: red;
+.nav-list-parent {
+    color: #FDDC22;
 }
 a {
-    color: #E5B60B;
+    color: #FC7307;
     text-decoration: none;
 }
 .nav-bar-outer { 
@@ -14,7 +15,7 @@ a {
 .footer-outer { 
     border-left-color: #342E09;
 }
-footer { 
+.footer { 
     background-color: #FC7307;
 }
 .footer-left p { 
@@ -43,4 +44,23 @@ strong {
     color: #F1CAAC;
     background-color: #816551;
     border-left: #342E09 solid 3px;
+}
+.breadcrumb {
+    background-color: #342E09;
+    color: #FDDC22;
+}
+.breadcrumb li a {
+    color: #FF7105;
+}
+ul.breadcrumb li a:hover {
+    color: #858585;
+}
+ul.breadcrumb li+li:before {
+    color: white;
+}
+.pag li a {
+    color: #FC7307;
+}
+.pag li a:hover {
+    color: #858585;
 }

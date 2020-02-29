@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        body {
+            width: 1024px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+<script>
+    function btnClickMe_Click()
+        {
+            var inputVar;
+            var spanVar;
+            inputVar = document.getElementById("txtInput");
+            spanVar = document.getElementById("spnOutput")
+            spanVar.innerHTML = "You entered " + inputVar.value;
+        }
+</script>
+</head>
+<body>
+    <h1>Button Test</h1>
+    <label for="txtInput">Enter your name:</label>
+    <input type="text" id="txtInput" />
+    <br />
+    <button type="button" id="btnClickMe" 
+            onclick="btnClickMe_Click()" >Click me</button>
+    <br />
+    <span id="spnOutput"></span>
+</body>
+</html>
