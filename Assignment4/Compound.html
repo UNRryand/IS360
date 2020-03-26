@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/local.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/Afford.js"></script>
+    <title>Compound Interest</title>
+</head>
+<body>
+    <div class="nav-wrap">
+        <nav>
+            <ul class="nav justify-content-center bg-dark">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Afford.html">Afford</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled-white" href="#">Compound Interest</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./payment.html">Payment</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <form>
+            <div class="form-row">
+                <div class="form-group col-4">
+                    <label for="iYears">Years</label>
+                    <input type="text" class="form-control" placeholder="Years" id="iYears">
+                </div>
+                <div class="form-group col-4">
+                    <label for="pValue">Present Value</label>
+                    <input type="text" class="form-control" placeholder="USD" id="pValue">
+                </div>
+                <div class="form-group col-4">
+                    <label for="iYR">I/YR</label>
+                    <input type="text" class="form-control" placeholder="5%" id="iYR">
+                </div>
+                <button type="button" class="btn btn-primary" onclick="cInterest()">Calculate</button>
+            </div>
+        </form>
+        <div class="container col-6 border border-dark rounded-pill mar-output test shadow">
+            <h2 class="h2 text-center font-weight-light">Amount after compound interest:</h2>
+            <div class="d-inline">
+                <h3 class="h3 text-success text-center font-weight-light" id="txtOutput"></h3>
+            </div>
+        </div>
+    </div>
+    <footer class="footer font-small">
+        <div class="text-center bg-dark">&COPY; 2020 Copyright: Ryan Deleurme
+        </div>
+      </footer>
+</body>
+</html>
